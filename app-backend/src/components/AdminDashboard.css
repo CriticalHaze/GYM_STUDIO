@@ -1,0 +1,104 @@
+/* AdminDashboard.css */
+
+/* Apply a darker orange background to the whole page */
+body {
+  background-color: #dc930b;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  position: relative; /* Add this to position the gray bars */
+}
+
+/* Style the white elements */
+h1, label, select, input, option {
+  color: white;
+  text-align: center;
+}
+
+/* Center the image horizontally */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  max-height: 50vh;
+  top: 0;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+button[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+.center-button {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50px; */ /* Commented out for centering the button */
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #555;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style the select elements within the table */
+div select, input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  color: black; /* Set the text color to black */
+}
+
+/* Set the text color to white for other white-text elements */
+.white-text {
+  color: white;
+}
+
+/* Add styles for the gray bars */
+.gray-bar {
+  width: 100px;
+  height: 100%;
+  background-color: #777; /* Adjust the color as needed */
+  position: absolute;
+  top: 0;
+}
+
+.left-bar {
+  left: 0;
+}
+
+.right-bar {
+  right: 0;
+}
