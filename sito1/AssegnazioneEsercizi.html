@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebManager GYM STUDIO</title>
+    
+    <!-- Collegamento a Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+    <style>
+        /* Stile per la pagina */
+        body {
+            background-color: #dc930b;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        label {
+            color: white;
+        }
+
+        h1, p {
+            color: white;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            max-height: 50vh;
+        }
+
+        .content {
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .submit-button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #555;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Stile per il dropdown menu */
+        .dropdown-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .dropdown-select {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 100%;
+            max-height: 150px; /* Regola l'altezza massima del menu a tendina */
+            overflow-y: auto; /* Abilita la barra di scorrimento se necessario */
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .dropdown-item img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .dropdown-wrapper:hover .dropdown-menu {
+            display: block;
+        }
+
+        .category {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Aggiungi spazio tra l'ultimo dropdown, il campo note e il pulsante Submit */
+        .dropdown-wrapper:last-of-type,
+        label[for="Name"],
+        #Name,
+        .submit-button {
+            margin-top: 20px; /* Modifica questa altezza a tua discrezione */
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.jpg" alt="Description of the image">
+    <h1>GYM STUDIO MOBILE MANAGER</h1>
+
+    <!-- Dropdown menu per selezionare l'utente -->
+    <div class="dropdown-wrapper">
+        <select class="dropdown-select">
+            <!-- Aggiungi qui le opzioni del dropdown -->
+            <option disabled selected>Seleziona un utente</option>
+            <option>ID:1; Nome:Ornella; Cognome:Ambrosino; Email:ornella.ambrosino@gmail.com</option>
+            <option>ID:2; Nome:Marco; Cognome:Di Domenico; Email:marcodidomenico2008@gmail.com</option>
+            <option>ID:3; Nome:Luigi; Cognome:Riccardis; Email:lriccardis022@gmail.com</option>
+            <!-- Aggiungi altri utenti come necessario -->
+        </select>
+        <div class="dropdown-menu">
+            <!-- Aggiungi qui le opzioni per gli utenti -->
+        </div>
+    </div>
+
+    <!-- Dropdown menu per assegnare l'esercizio -->
+    <div class="dropdown-wrapper">
+        <select class="dropdown-select">
+            <!-- Aggiungi qui le opzioni del dropdown -->
+            <option disabled selected>Assegna un esercizio</option>
+            <optgroup label="Categoria: Petto">
+                <!-- Aggiungi qui le opzioni del dropdown -->
+                <option class="dropdown-item">
+                  PectoralMachine
+                </option>
+                <option class="dropdown-item">
+                    LatMachine
+                </option>
+            </optgroup>
+            <optgroup label="Categoria: Schiena">
+                <!-- Aggiungi qui le opzioni del dropdown -->
+                <option class="dropdown-item">       
+                    PullUp
+                </option>
+                <option class="dropdown-item">
+                    Squat
+                </option>
+            </optgroup>
+            <!-- Aggiungi altre categorie e esercizi come necessario -->
+        </select>
+        <div class="dropdown-menu">
+            <!-- Aggiungi qui le opzioni per gli esercizi -->
+        </div>
+    </div>
+
+    <!-- Dropdown menu per il numero di serie -->
+    <div class="dropdown-wrapper">
+        <select class="dropdown-select">
+            <!-- Aggiungi qui le opzioni del dropdown -->
+            <option disabled selected>Seleziona il numero di serie</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <!-- Aggiungi altri numeri di serie come necessario -->
+        </select>
+        <div class="dropdown-menu">
+            <!-- Aggiungi qui le opzioni per il numero di serie -->
+        </div>
+    </div>
+
+    <!-- Dropdown menu per il numero di ripetizioni -->
+    <div class="dropdown-wrapper">
+        <select class="dropdown-select">
+            <!-- Aggiungi qui le opzioni del dropdown -->
+            <option disabled selected>Seleziona il numero di ripetizioni</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+        <div class="dropdown-menu">
+            <!-- Aggiungi qui le opzioni per il numero di ripetizioni -->
+        </div>
+    </div>
+
+    <div class="dropdown-wrapper">
+        <select class="dropdown-select">
+            <!-- Aggiungi qui le opzioni del dropdown -->
+            <option disabled selected>Seleziona il carico da utilizzare</option>
+            <option>2 KG</option>
+            <option>4 KG</option>
+            <option>5 KG</option>
+            <option>6 KG</option>
+            <option>8 KG</option>
+            <option>10 KG</option>
+            <option>12 KG</option>
+            <option>15 KG</option>
+            <option>18 KG</option>
+            <option>20 KG</option>
+            <option>25 KG</option>
+            <option>28 KG</option>
+            <option>30 KG</option>
+            <option>35 KG</option>
+        </select>
+        <div class="dropdown-menu">
+            <!-- Aggiungi qui le opzioni per il carico -->
+        </div>
+    </div>
+
+    <div class="dropdown-wrapper">
+        <select class="dropdown-select">
+            <!-- Aggiungi qui le opzioni del dropdown -->
+            <option disabled selected>Seleziona la durata dell esercizio</option>
+            <option>5 min</option>
+            <option>10 min</option>
+            <option>15 min</option>
+            <option>20 min</option>
+            <option>25 min</option>
+            <option>30 min</option>
+            <option>40 min</option>
+           
+        </select>
+        <div class="dropdown-menu">
+            <!-- Aggiungi qui le opzioni per il carico -->
+        </div>
+    </div>
+
+    <label for="Name">Note per l'esercizio:</label>
+    <input type="text" id="Name" name="Name" class="form-control" style="width: 50%; height: 60px;">
+
+    <button class="btn btn-primary submit-button" onclick="location.reload()">SUBMIT</button>
+
+    <div class="select">
+        <p>GYM STUDIO A.S.D. 2023</p>
+    </div>
+</body>
+</html>

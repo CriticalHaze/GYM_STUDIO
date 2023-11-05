@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebManager GYM STUDIO</title>
+
+    <!-- Collegamento a Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Stili personalizzati -->
+    <style>
+        /* Stile per la pagina */
+        body {
+            background-color: #dc930b;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        h1, p {
+            color: white;
+            text-align: center;
+        }
+        
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            max-height: 50vh;
+        }
+
+        /* Personalizza lo stile del form di Bootstrap */
+        form {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .submit-button {
+            background-color: white;
+            color: black;
+        }
+
+        .submit-button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        table {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #555;
+        }
+
+        tr {
+            background-color: #ede2e2;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.jpg" alt="Description of the image">
+    <h1>GYM STUDIO MOBILE MANAGER ADMIN</h1>
+
+    <!-- Form per aggiungere un utente -->
+    <form class="mx-auto">
+        <h2 style="color: white ;text-align: center;">Aggiungi un utente</h2>
+        <input type="text" class="form-control" placeholder="ID Utente" required>
+        <input type="text" class="form-control" placeholder="ID Palestra" required>
+        <input type="text" class="form-control" placeholder="Nome" required>
+        <input type="text" class="form-control" placeholder="Cognome" required>
+        <input type="date" class="form-control" placeholder="Data di Nascita" required>
+        <input type="email" class="form-control" placeholder="Email" required>
+        <button class="btn btn-primary submit-button mt-3" type="submit">Aggiungi</button>
+    </form>
+
+    <!-- Tabella per visualizzare gli utenti -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID Palestra</th>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Data di nascita</th>
+                <th>Email</th>
+                <th>Azioni</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>101</td>
+                <td>Ornella</td>
+                <td>Ambrosino</td>
+                <td>20/1/93</td>
+                <td>ornella.ambrosino@gmail.com</td>
+                <td>
+                    <button class="btn btn-primary submit-button">Visualizza</button>
+                    <button class="btn btn-danger submit-button">Elimina</button>
+                    <button class="btn btn-info submit-button">Modifica</button>
+                    <a href="AssegnazioneEsercizi.html" class="btn btn-success submit-button">Assegna scheda esercizi</a>
+                </td>
+            </tr>
+            <tr>
+                <!-- Aggiungi altre righe per gli utenti come necessario -->
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="select">
+        <p>GYM STUDIO A.S.D. 2023</p>
+    </div>
+
+    <!-- Collegamento al JavaScript di Bootstrap (se necessario) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

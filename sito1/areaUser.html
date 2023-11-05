@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM STUDIO</title>
+
+    <!-- Collegamento a Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+
+
+    <!-- Stili personalizzati -->
+    <style>
+        /* Stile per la pagina */
+        body {
+            background-color: #dc930b;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        h1, p {
+            color: white;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            max-height: 50vh;
+        }
+
+        /* Personalizza lo stile del form di Bootstrap */
+        form {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .submit-button {
+            background-color: white;
+            color: black;
+        }
+
+        .submit-button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        table {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #555;
+        }
+
+        tr {
+            background-color: #ede2e2;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.jpg" alt="GYM STUDIO">
+    <h1>GYM STUDIO</h1>
+
+
+    <p>Qui troverai tutte le informazioni personali associate al tuo account</p>
+     <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>ID Palestra</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Data di nascita</th>
+            <th>Email</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>101</td>
+            <td>Ornella</td>
+            <td>Ambrosino</td>
+            <td>20/1/93</td>
+            <td>ornella.ambrosino@gmail.com</td>
+            </tr>
+            
+        </tbody>
+        </table>
+        <div>
+        <p>La tua scheda esercizi:</p>
+    </div>
+        <table>
+            <tr>
+                <th>Esercizo Num:</th>
+                <th>Nome Esercizio</th>
+                <th>descrizione Esercizio:</th>
+                <th>numero di serie per Esercizio:</th>
+                <th>numero di ripetizioni per Esercizio:</th>
+                <th>carico da utilizzare per Esercizio:</th>
+                <th>durata per esercizio:</th>
+                <th>note sull'esercizio:</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Push-Up</td>
+                <td>Eseguito in posizione prona, ossia con il corpo disteso orizzontalmente e faccia rivolta verso il basso, alzando ed abbassando il corpo tramite le braccia.</td>
+                <td>3</td>
+                <td>10</td>
+                <td>0</td>
+                <td>8 minuti</td>    
+                <td>Da eseguire su tappetino apposito</td>    
+                </tr>       
+                <tr>
+                    <td>2</td>
+                    <td>PectoralMachine</td>
+                    <td>posizionare i gomiti sulla superficie morbida in modo che il braccio sia extraruotato e formi con l'avambraccio un angolo di 90°: tramite spinta il macchinario consente un movimento a croce efficace sulla zona del petto.</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>25 KG</td>
+                    <td>6 minuti</td>    
+                    <td>30 secondi di riposo tra una serie ed un altra</td>    
+                    </tr>  
+                    <tr>
+                        <td>3</td>
+                        <td>Tapis Roulant</td>
+                        <td>Correre o camminare sul Tapis Roulant può aiutare a tonificare i muscoli delle gambe, dei glutei e dell'addome. Aumentare la resistenza. L'allenamento regolare sul Tapis Roulant può aumentare la resistenza fisica e migliorare la capacità di resistere allo sforzo.</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>30 minuti</td>    
+                        <td>Non eccedere nella velocita</td>    
+                        </tr>   
+                    </tbody>
+            </table>
+
+   
+    <div class="select">
+        <p> GYM STUDIO A.S.D. 2023</p>
+        </div>
+        <!-- Collegamento al JavaScript di Bootstrap (se necessario) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
